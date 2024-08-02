@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yan Dex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="header">
+        <div class="logo">
+            <p> Леонардо да Винчи</p>
+        </div>
+        <div class="menu">
+            <a href="index.html"><p>📀Главная</p></a>
+            <a href="galery.html"><p>📀Галерея</p></a>
+            <a href="findBox.html"><p>📀Найди Мона Лизу</p></a>
+            <a href="clicker.html"><p>📀Да Винчи комбат</p></a>
+       </div>
+
+   </div>  
+   <div class="main_game_findBox">
+    <div class="clickerGame">
+        <div class="leoBuster">
+            <div class="leoBoxes">
+                <div class="leoBox">
+                    <button onclick="openSetWindow()">Картины</button>
+                </div>
+                <dialog id="testingSetWindow">
+                    <div class="containerTestingWindow">
+                        <div class="containerCloseButton">
+                            <div onclick="closeSetWindow()"><p>✘</p></div>
+                        </div>
+                        <h2>Картины Да Винчи</h2>
+                        <div class="gridCard">
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/pi.jpg">
+                                    </div>
+                                    <div>
+                                        <h3>Мона Лиза</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId0">30</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId0">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(0)" class="buybutton">
+                                        <p><span id="costCardId0">17</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/2129753821.jpg">
+                                    </div>
+                                    <div>
+                                        <h3>Тайная вечеря</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId1">27</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId1">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(1)" class="buybutton">
+                                        <p><span id="costCardId1">14</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/594331897.jpg">
+                                    </div>
+                                    <div>
+                                        <h3>Дама с горностаем</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId0">30</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId2">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(2)" class="buybutton">
+                                        <p><span id="costCardId2">11</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/4651.jpg">
+                                    </div>
+                                    <div>
+                                        <h3>Спаситель мира</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId4">19</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId4">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(4)" class="buybutton">
+                                        <p><span id="costCardId4">9</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/1191823619.jpg">
+                                    </div>
+                                    <div>
+                                        <h3>Витрувианский человек</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId5">15</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId5">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(5)" class="buybutton">
+                                        <p><span id="costCardId5">5</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/1267290729.jpg">
+                                    </div>
+                                    <div>
+                                        <h3>Мадонна в скалах</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId6">100</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId6">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(6)" class="buybutton">
+                                        <p><span id="costCardId6">380</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/1693882151.jpg">
+                                    </div>
+                                    <div>
+                                        <h3>Портрет джиневры де Бинчи</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId7">56</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId7">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(7)" class="buybutton">
+                                        <p><span id="costCardId7">120</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/lf.jpg">
+                                    </div>
+                                    <div>
+                                        <h3>Святая Анна с малонной и младенцем христом</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId8">84</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId8">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(8)" class="buybutton">
+                                        <p><span id="costCardId8">200</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+
+                </dialog>
+                <div class="leoBox">
+                    <button onclick="openInWindow()">Инструменты</button>
+                </div>
+                <dialog id="testingInWindow">
+                    <div class="containerTestingWindow">
+                        <div class="containerCloseButton">
+                            <div onclick="closeInWindow()"><p>✘</p></div>
+                        </div>
+                        <h2>Картины Да Винчи</h2>
+                        <div class="gridCard">
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/pngwing.com(11).png">
+                                    </div>
+                                    <div>
+                                        <h3>Кисточка</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId9">30</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId9">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(9)" class="buybutton">
+                                        <p><span id="costCardId9">17</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/pngwing карандаши.com.png">
+                                    </div>
+                                    <div>
+                                        <h3>Карандаши</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId10">27</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId10">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(10)" class="buybutton">
+                                        <p><span id="costCardId10">14</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/pngwing акварельные карандаши.com.png">
+                                    </div>
+                                    <div>
+                                        <h3>Акварельные карандаши</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId0">30</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId11">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(11)" class="buybutton">
+                                        <p><span id="costCardId11">11</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/pngwing фломастеры.com.png">
+                                    </div>
+                                    <div>
+                                        <h3>Фломастеры</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId12">19</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId12">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(12)" class="buybutton">
+                                        <p><span id="costCardId4">9</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/pngwing палитра.com.png">
+                                    </div>
+                                    <div>
+                                        <h3>Палитра</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId13">15</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId13">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(13)" class="buybutton">
+                                        <p><span id="costCardId13">5</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oneCard">
+                                <div class="topPath">
+                                    <div>
+                                        <img src="Pictures/мальберт.zip">
+                                    </div>
+                                    <div>
+                                        <h3>Мальберт</h3>
+                                        <p>Доход в минуту</p>
+                                        <p><span id="countCardId14">100</span> ₿</p>
+                                    </div>
+                                </div>
+                                <div class="bottomPath">
+                                    <div>
+                                        <p>Уровень <span id="levelCardId14">1</span></p>
+                                    </div>
+                                    <div onclick="buyard(6)" class="buybutton">
+                                        <p><span id="costCardId14">380</span> ₿</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </dialog>
+                </div>
+            <div class="leoStatistic">
+            <h3>Твоя статистика</h3>
+            <p>Прибыль <span id="countHour">50</span> ₿ в минуту</p>
+           </div>
+        </div>
+        <div class="leoField">
+            <p id="count">0</p>
+            <button onclick="tapLeo()" id="buttonLeo"><img id="leo" src="Pictures/хомяк.jpeg"></button>
+        </div>
+        <div class="leoBuster2">
+            <div>
+                <img src="Pictures/icons8-удар-молнии-32.png">
+                <p><span id="energy">100</span> ∕ 100</p>
+            </div>
+            <div onclick="buyPower()" id="buyPower">
+                <img src="Pictures/icons8-сила-32.png">
+                <p><span id="power">2</span>  <span id="costPower">10</span> ₿</p>
+            </div>
+        </div>
+        
+        </div> 
+   </div>
+   <div class="footer">
+    <div class="review">
+        <p>Пожалуйста, оцените нас</p>
+        <div class="pictureReview">
+            <img id="gr" src="Pictures/pngwing.com (2).png" onclick="alert('Спасибо за высокую оценку')">
+            <img id="red" src="Pictures/pngwing.com (3).png" onclick="alert('Очень жаль что вам не понравилось')">
+        </div>
+        <div class="textReview">
+
+        </div>
+   </div>
+   <div class="developer">
+    <p>Разработчик : Tigran</p>
+    <p>Email: tigrankabadaran@gmail.com</p>
+    <p>г.Гомель 2024г.</p>
+    <p>Разработано при поддержке Iteen Academy</p>
+   </div>
+   <div class="social">
+        <div>
+            <a href="#"><img src="Pictures/pngwing.com.png4.png"></a>
+        </div>
+        <div>
+            <a href="#"><img src="Pictures/pngwing.com (5).png"></a>
+        </div>
+   </div>
+    </div>
+    <div class="zaglushka">
+    <div>
+        <h3>Данная версия сайта не поддерживается вашим устройством.</h3>
+        <h3>Перейдите на устройство с большим экраном.</h3>
+        <h3>По возникшим вопросом обращатся <i>tigrankabadaran@gmail.com.</i></h3>
+    </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

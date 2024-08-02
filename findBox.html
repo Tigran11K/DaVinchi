@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yan Dex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="header">
+        <div class="logo">
+            <p> Леонардо да Винчи</p>
+        </div>
+        <div class="menu">
+            <a href="index.html"><p>📀Главная</p></a>
+            <a href="galery.html"><p>📀Галерея</p></a>
+            <a href="findBox.html"><p>📀Найди Мона Лизу</p></a>
+            <a href="clicker.html"><p>📀Да Винчи комбат</p></a>
+       </div>
+
+   </div>  
+   <div class="main_game_findBox">
+    <div class="fieldGame">
+        <div class="textGame">
+            <div id="textHello">
+                <h2>Привет, дорогой друг</h2>
+                <br>
+                <p>Перед тобой пять коробок.</p>
+                <p>Если ты угадаешь в какой из них спряталась картина Мона Лиза,</p>
+                <p>то быть тебе миллионером</p>
+            </div>
+            <div id="textWinner">
+                <h2>Поздравляю!</h2>
+                <br>
+                <p>Теперь ты точно станешь миллионером</p>
+            </div>
+            <div id="textLooser">
+                <h2>Леонардо Да Винчи взгруснул!</h2>
+                <br>
+                <p>Представьте, что он сидит в своем мастерской, окруженный незаконченной работой,
+                     с кистью в одной руке и руками, отражающими его раздумья. Взгляд его устремлен в окно, где за горизонтом светит заходящее солнце, окрашивая небо в теплые, но печальные оттенки.</p>
+            </div>
+        </div>
+        <div class="fieldBox">
+           <img src="Pictures/pngwing.com (6).png" id="box0" onclick="choise(0)">
+           <img src="Pictures/pngwing.com (6).png" id="box1" onclick="choise(1)">
+           <img src="Pictures/pngwing.com (6).png" id="box2" onclick="choise(2)">
+           <img src="Pictures/pngwing.com (6).png" id="box3" onclick="choise(3)">
+           <img src="Pictures/pngwing.com (6).png" id="box4" onclick="choise(4)">
+        </div>
+        <div class="restartButton" id="restartButton">
+            <button onclick="reloadGame()">Заново</button>
+        </div>
+    </div>
+   </div>
+   </div>
+   <div class="footer">
+    <div class="review">
+        <p>Пожалуйста, оцените нас</p>
+        <div class="pictureReview">
+            <img id="gr" src="Pictures/pngwing.com (2).png" onclick="alert('Спасибо за высокую оценку')">
+            <img id="red" src="Pictures/pngwing.com (3).png" onclick="alert('Очень жаль что вам не понравилось')">
+        </div>
+        <div class="textReview">
+
+        </div>
+   </div>
+   <div class="developer">
+    <p>Разработчик : Tigran</p>
+    <p>Email: tigrankabadaran@gmail.com</p>
+    <p>г.Гомель 2024г.</p>
+    <p>Разработано при поддержке Iteen Academy</p>
+   </div>
+   <div class="social">
+        <div>
+            <a href="#"><img src="Pictures/pngwing.com.png4.png"></a>
+        </div>
+        <div>
+            <a href="#"><img src="Pictures/pngwing.com (5).png"></a>
+        </div>
+   </div>
+    </div>
+    <div class="zaglushka">
+        <div>
+            <h3>Данная версия сайта не поддерживается вашим устройством.</h3>
+            <h3>Перейдите на устройство с большим экраном.</h3>
+            <h3>По возникшим вопросом обращатся <i>tigrankabadaran@gmail.com.</i></h3>
+        </div>
+        </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 7vh;
+
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Tokio;
+    font-size: 25pt;
+}
+@font-face {
+    font-family: Tokio;
+    src: url("ofont.ru_Balkara\ Condensed.ttf");
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16pt;
+}
+.main_home{
+    display: flex;
+    flex-direction: row;
+}
+.banner{
+    width: 35%;
+    margin-left: 5%;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+.info{
+    width: 65%;
+    margin-left: 3%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.infoTesting{
+    width: 90%;
+
+}
+.infoTesting p{
+    font-size: 14pt;
+    margin: 10px;
+    text-align: justify;
+}
+.moreInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.vacansies{
+    width: 75%;
+    padding: 10%;
+    background-color: rgba(86, 74, 74, 0.33);
+    margin-right: 5%;
+  
+}
+.span{
+    font-weight: 900;
+    margin-right: 30px;
+}
+
+.left{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 12px;
+}
+.table{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.reklama img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 12px;
+}
+.reklama{
+    border: 2px solid rgba(134, 99, 99, 0.774);
+    width: 70%;
+    height: 25vh;
+    margin-top: 10%;
+
+}
+.footer{
+    width: 100%;
+    border-top: 2px solid black;
+    margin-top: 40px;
+    padding-top: 40px;
+    display: grid; 
+    grid-template-columns: 25% 50% 25%;
+}
+.review{
+    display: grid;
+    grid-template-rows: 15% 60%;
+}
+.pictureReview{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.pictureReview img{
+    width: 80px;
+    height: auto;
+    transition: 0.2s;
+}
+.review p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+#red:hover{
+    cursor: pointer;
+    filter: drop-shadow(16px 16px 20px rgb(226, 68, 32)) invert(0%);
+}
+#gr:hover{
+    cursor: pointer;
+    filter: drop-shadow(16px 16px 20px rgb(32, 226, 123)) invert(0%);
+}
+.menu a p{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.menu a p:hover{
+    background-color: rgb(255, 217, 0);
+    box-shadow: 2px 2px 2px 2px black;
+}
+.developer{
+    width: 50%;
+    margin-left: 25%;
+    line-height: 130%;
+    font-family: Docker;
+}
+@font-face{
+    font-family: Docker;
+    src: url(ofont.ru_Docker.ttf);
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social div{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social img{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+.social img:hover{
+    filter: contrast(80%);
+    width: 55px;
+    height: 55px;
+    transition: 0.2s;
+}
+@keyframes animationText{
+    0%{
+        font-size: 14pt;
+    }
+    50%{
+        font-size: 18pt;
+    }
+    100%{
+        font-size: 14pt;
+    }
+}
+#textLogo{
+    animation: animationText 4s infinite;
+    text-align: center;
+    font-family: reklama;
+}
+@font-face {
+    font-family: reklama;
+    src: url(ofont.ru_Orpheus.ttf);
+    font-size: 2px;
+}
+.current{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.currentContainer{
+    width: 50%;
+    background: #ffffff;
+    border-radius: 10px;
+    height: 40%;
+    padding: 2%;
+    font-size: 16pt;
+    line-height: 150%;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    margin-top: 40px;
+}
+.newCard{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.textCard{
+    width: 65%;
+    font-size: 20px;
+    line-height: 160%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.textCard p{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.imgCard{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgCard img{
+    width: 100%;
+}
+.main_game_findBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.fieldGame{
+    width: 60%;
+    height: 70vh;
+    background-color: #e3e6ff;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows:  30% 50% 20% ;
+}
+.textGame{
+    width: 50%;
+    margin-left: 25%;
+    background-color: aliceblue;
+    font-size: 16px;
+    border-radius: 20px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 2%;
+    padding-top: 2%;
+    font-weight: 500;
+}
+.fieldBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fieldBox img{
+    width: 16%;     
+}
+.fieldBox img:hover{
+    cursor:cell;
+    box-shadow: 0px 0px 5px 5px rgba(255, 215, 0);
+    border-radius: 20px;
+}
+.restartButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restartButton button{
+    width: 20%;
+    padding: 1%;
+    font-size: 16pt;
+    background-color: #ffe55d;
+    border-radius: 20px;
+}
+#restartButton{
+    display: none;
+}
+#textWinner{
+    display: none;
+}
+#textLooser{
+    display: none;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+  .clickerGame{
+    width: 60%;
+    height: 70vh;
+    background-color: #484849;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows:   20%  50% 30%;
+}
+.leoCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.leoBuster{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #000000;
+}
+.leoBoxes{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+
+}
+.leoBox button{
+    padding: 10%;
+    font-size: 14pt;
+    background-color: rgba(255, 215, 0);
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+.clickerGame button:hover{
+    cursor: url("Pictures/icons8-курсор-32\ \(2\).png"), auto;
+}
+.leoStatistic{
+    color: white;
+    border-radius: 10px;
+    border:1px solid gray;
+    background-color: gray;
+    padding: 10px;
+    margin-left: 50px;
+}
+.leoField{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.leoField button{
+    width: 30%;
+    border-radius: 100%;
+    border: 0px;
+}
+#leo{
+    width: 100%;
+    height: 100.1%;
+    border-radius: 50%;
+}
+@font-face {
+    font-family: "number";
+    src: url(EsquivelTrial.ttf);
+}
+#count{
+    font-family: "number";
+    font-size: 40px;
+}
+.leoBuster2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leoBuster2 div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    background-color: gray;
+    color: white;
+    border-radius: 20px;
+    width: 15%;
+    padding-right: 2%;
+    font-family: "number";
+}
+#buyPower:hover{
+    cursor: url("Pictures/icons8-курсор-32\ \(2\).png"), auto;
+}
+
+#testingSetWindow{
+    width: 50%;
+    height: 80%;
+    margin-left: 25%;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 5px gray;
+    background-color: gray;
+}
+#testingSetWindow::backdrop{
+    background-color: rgba(255, 255, 255, 0.646);
+}
+#testingSetWindow::-webkit-scrollbar{
+    display: none;
+}
+.containerTestingWindow{
+    display: grid;
+    grid-template-rows: 10% 10% 10%;
+    text-align: center;
+    color: white;
+}
+.containerCloseButton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.containerCloseButton div{
+    padding: 5px;
+    border: 1px solid gray;
+}
+.containerCloseButton div:hover{
+    background-color: gold;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;  
+}
+.gridCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.oneCard{
+    width: 40%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    margin-top: 40px;
+    border: 1px solid gold;
+    border-radius: 20px;
+    background-color: rgba(255, 217, 0, 0.595);
+    color: black;
+}
+.topPath{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.topPath div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.topPath div img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+}
+.bottomPath{
+    display: grid;
+    grid-template-columns: 30% 50%;
+    gap: 20%;
+    border-top: 1px solid black;
+}
+.bottomPath div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottomPath div:first-child{
+    border-right: 1px solid black;
+}
+.buybutton:hover{
+    cursor: url("Pictures/icons8-курсор-32\ \(2\).png"), auto;
+}
+.zaglushka{
+    display: none;
+}
+
+@media (max-width: 999px){
+    .zaglushka{
+        display: flex;
+        text-align: center;
+        margin-top: 200px;
+
+    }
+    .header{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .main_game_findBox{
+        display: none;
+    }
+    .main_home{
+        display: none;
+    }
+    .main_galery{
+        display: none;
+    }
+}
+.vacansies{
+    display: none;
+}
+.leoBox button:hover{
+    box-shadow: 0px 0px 5px 5px rgba(255, 215, 0);
+    border: 1px solid gold;
+}
+#testingInWindow{
+    width: 50%;
+    height: 80%;
+    margin-left: 25%;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 5px gray;
+    background-color: gray;
+}
+#testingInWindow::backdrop{
+    background-color: rgba(255, 255, 255, 0.646);
+}
+#testingInWindow::-webkit-scrollbar{
+    display: none;
+}
